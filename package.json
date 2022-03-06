@@ -33,7 +33,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-    "@gmcotta/design-tokens": "^1.0.0",
+    "@gmcotta/design-tokens": "^1.0.2",
     "@gmcotta/meiuca-assets": "^1.0.0",
     "lit": "^2.2.0"
   }

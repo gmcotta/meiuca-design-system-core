@@ -2,6 +2,7 @@ import { LitElement, html, unsafeCSS } from "lit";
 import { classMap } from 'lit/directives/class-map.js';
 
 import { createSvgElement } from '../../utils/js/svgHelper'; 
+import { hostContextHelper } from "../../utils/js/hostContextHelper";
 import Brand from "./Brand";
 import menu from '@gmcotta/meiuca-assets/dist/assets/icons/menu';
 import close from '@gmcotta/meiuca-assets/dist/assets/icons/close';
@@ -22,6 +23,10 @@ export default class DscHeader extends LitElement {
   constructor() {
     super();
     this.opened = false;
+  }
+
+  updated() {
+    hostContextHelper(this);
   }
 
   _handleChange() {

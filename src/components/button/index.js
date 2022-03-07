@@ -34,7 +34,7 @@ export class DscButton extends LitElement {
       <button 
         class=${classMap({
           [`button`]: true,
-          [`button-loading`]: this.loading
+          [`button--loading`]: this.loading
         })}
         ?disabled=${this.disabled}
         aria-disabled=${this.disabled}

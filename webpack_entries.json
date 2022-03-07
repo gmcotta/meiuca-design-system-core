@@ -1,0 +1,17 @@
+{
+  "main": {
+      "import": "./src/index.js"
+  },
+  "button": {
+      "import": "./src/components/button/index.js"
+  },
+  "header": {
+      "import": "./src/components/header/index.js"
+  },
+  "icon": {
+      "import": "./src/components/icon/index.js"
+  },
+  "select": {
+      "import": "./src/components/select/index.js"
+  }
+}

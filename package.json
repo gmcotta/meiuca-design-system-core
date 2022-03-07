@@ -1,8 +1,15 @@
 {
-  "name": "design-system-core",
+  "name": "@gmcotta/design-system-core",
   "version": "1.0.0",
-  "description": "",
+  "description": "Repositório da biblioteca de componentes core do curso de Design Systems para desenvolvedores da Meiuca",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "npx webpack serve --config ./webpack.dev.js",
     "build": "npx webpack -o dist --config ./webpack.prod.js",
@@ -12,8 +19,12 @@
     "test:coverage": "web-test-runner --node-resolve --coverage",
     "test:watch": "web-test-runner src/**/*.test.js --node-resolve --watch"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "design-system",
+    "componentes core",
+    "meiuca"
+  ],
+  "author": "Gustavo Matias",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.17.5",

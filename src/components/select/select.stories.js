@@ -1,5 +1,7 @@
-import { html } from 'lit'
-import './index.js'
+import { html } from 'lit';
+import { action } from '@storybook/addon-actions';
+
+import './index.js';
 
 export default {
   title: 'Components/Select'
@@ -16,6 +18,17 @@ export const Select = ({
   error
 }) => {
 
+  function _handleChange(event) {
+    action('dscChange')({ value: event.detail.value });
+  }
+
+  function _handleFocus() {
+    action('dscFocus')({ value: 'Focus event' });
+  }
+  function _handleBlur() {
+    action('dscFocus')({ value: 'Blur event' });
+  }
+
   return html`
     <dsc-select
       id="input-text-id"
@@ -25,8 +38,11 @@ export const Select = ({
       .placeholder="${placeholder}"
       .helperText="${helperText}"
       ?required="${required}"
-      ?disabled=${disabled}
+      ?disabled="${disabled}"
       ?error="${error}"
+      @dscChange="${event => _handleChange(event)}"
+      @dscFocus="${_handleFocus}"
+      @dscBlur="${_handleBlur}"
     >
       <option value="1">Label 1</option>
       <option value="2">Label 2</option>

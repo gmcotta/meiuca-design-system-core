@@ -35,16 +35,54 @@ export class DscSelect extends LitElement {
     this.error = false;
   }
 
+  get selectContainer() {
+    return this.shadowRoot.querySelector('.select');
+  }
+
+  get select() {
+    return this.shadowRoot.querySelector('select');
+  }
+
   firstUpdated() {
     const slot = this.shadowRoot?.querySelector('slot');
-    console.log({ slot })
     const childNodes = slot?.assignedNodes({ flatten: true });
-    console.log(childNodes);
     Array.prototype.map?.call(childNodes, node => {
       if(node.nodeName === 'OPTION') {
-        this.shadowRoot.querySelector('select')?.appendChild(node);
+        this.select?.appendChild(node);
       }
     });
+  }
+
+  _handleChange(event) {
+    this.value = event.target.value;
+    this.dispatchEvent(new CustomEvent('dscChange', {
+      detail: {
+        value: this.value,
+      },
+      bubbles: true,
+      composed: true
+    }))
+  }
+
+  _handleFocus() {
+    this.dispatchEvent(new CustomEvent('dscFocus', {
+      bubbles: true,
+      composed: true
+    }));
+  }
+
+  _handleBlur() {
+    this.selectContainer.classList.remove('select--focus');
+    this.dispatchEvent(new CustomEvent('dscBlur', {
+      bubbles: true,
+      composed: true
+    }));
+  }
+
+  _handleKeyup(event) {
+    if (event.code === 'Tab') {
+      this.selectContainer.classList.add('select--focus');
+    }
   }
 
   render () {
@@ -55,6 +93,7 @@ export class DscSelect extends LitElement {
         [`select--disabled`]: this.disabled,
         [`select--error`]: this.error
       })}"
+      @keyup="${event => this._handleKeyup(event)}"
     >
       <label for="${this.id}">${this.label}</label>
       <div class="select-wrapper">
@@ -64,6 +103,9 @@ export class DscSelect extends LitElement {
           .value="${this.value}"
           ?required="${this.required}"
           ?disabled="${this.disabled}"
+          @input="${event => this._handleChange(event)}"
+          @focus="${this._handleFocus}"
+          @blur="${this._handleBlur}"
         >
           <option value="" disabled selected hidden>${this.placeholder}</option>
         </select>

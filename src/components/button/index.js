@@ -47,4 +47,6 @@ export class DscButton extends LitElement {
   }
 }
 
-customElements.define('dsc-button', DscButton);
+if(!customElements.get('dsc-button')) {
+  customElements.define('dsc-button', DscButton);
+}

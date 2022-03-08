@@ -1,7 +1,7 @@
 import { html, LitElement, unsafeCSS } from "lit";
 import style from './styles.scss';
 
-export const HEADING_SIZE_OPTIONS = ['caption', 'paragraph', 'xs', 'sm', 'md', 'lg', 'xl', 'display'];
+export const HEADING_SIZE_OPTIONS = ['xs', 'sm', 'md', 'lg', 'xl', 'display'];
 
 export class DscHeading extends LitElement {
   static get styles() {

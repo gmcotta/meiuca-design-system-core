@@ -3,7 +3,7 @@ import { html } from 'lit';
 
 import '.';
 
-describe('Heading', () => {
+describe('Paragraph', () => {
   it('should render the component', async () => {
     const element = await fixture(html`
       <dsc-paragraph>Test</dsc-paragraph>

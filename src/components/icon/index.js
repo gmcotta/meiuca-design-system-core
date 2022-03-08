@@ -5,6 +5,8 @@ import { createSvgElement } from "../../utils/js/svgHelper";
 
 import style from './icon.styles.scss';
 
+const ICON_SIZE_OPTIONS = ['sm', 'md', 'lg'];
+
 export default class DscIcon extends LitElement {
   static get styles() {
     return unsafeCSS(style);
@@ -23,8 +25,13 @@ export default class DscIcon extends LitElement {
     this.icon = '';
   }
 
-  get patternSize() {
-     return ['sm', 'md', 'lg'].includes(this.size) ? this.size : 'md';
+  updated() {
+    if(!ICON_SIZE_OPTIONS.includes(this.size)) {
+      throw new Error('Select a valid size.');
+    }
+    if(!this.icon) {
+      throw new Error('Select a valid icon.');
+    }
   }
 
   render () {
@@ -32,7 +39,7 @@ export default class DscIcon extends LitElement {
       <div 
         class="${classMap({
           [`icon`]: true,
-          [`icon--${this.patternSize}`]: true
+          [`icon--${this.size}`]: true
         })}"
         part="icon"
       >

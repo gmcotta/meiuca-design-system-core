@@ -1,5 +1,6 @@
 const CopyPlugin = require('copy-webpack-plugin');
-const webpackBase = require('../webpack.config');
+
+const webpackBase = require('../webpack.dev');
 
 module.exports = {
   "stories": ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
@@ -9,7 +10,8 @@ module.exports = {
     builder: "webpack5"
   },
   webpackFinal: (config) => {
-    config.module.rules.push(...webpackBase.module.rules);
+    const webpackConfig = webpackBase();
+    config.module.rules.push(...webpackConfig.module.rules);
     config.plugins.push(
       new CopyPlugin({
         patterns: [

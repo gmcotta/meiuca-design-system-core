@@ -1,0 +1,136 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><title>Webpack App</title><meta name="viewport" content="width=device-width,initial-scale=1"/><style>html, body {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }</style><script>/* globals window */
+  /* eslint-disable no-underscore-dangle */
+  try {
+    if (window.top !== window) {
+      window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.top.__REACT_DEVTOOLS_GLOBAL_HOOK__;
+    }
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.warn('unable to connect to top frame for connecting dev tools');
+  }
+
+  window.onerror = function onerror(message, source, line, column, err) {
+    if (window.CONFIG_TYPE !== 'DEVELOPMENT') return;
+    // eslint-disable-next-line no-var, vars-on-top
+    var xhr = new window.XMLHttpRequest();
+    xhr.open('POST', '/runtime-error');
+    xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+    xhr.send(
+      JSON.stringify({
+        /* eslint-disable object-shorthand */
+        message: message,
+        source: source,
+        line: line,
+        column: column,
+        error: err && { message: err.message, name: err.name, stack: err.stack },
+        origin: 'manager',
+        /* eslint-enable object-shorthand */
+      })
+    );
+  };</script><style>.docblock-argstable .docblock-argstable-body tr{
+    border: none;
+    color: #292929;
+  }
+
+  table.docblock-argstable .docblock-argstable-head tr th,
+  table.docblock-argstable tbody tr td {
+    color: #292929 !important;
+  }
+
+  .sidebar-item{
+    color: #f5f5f5 !important;
+  }
+
+   .sidebar-item svg{
+    color: #f5f5f5 !important;
+  }
+
+  .sidebar-item[data-selected="true"] svg{
+    color: #ffffff !important;
+  }
+
+  .docblock-argstable-body tr td button ~ span,
+  .docblock-argstable-body tr td button ~ span svg {
+    color: white;
+  }
+
+  .docblock-argstable-body tr[title*=items]:hover td {
+    background: #000000 !important;
+  }
+
+  .search-field input,
+  .search-field code {
+    background: #fff;
+  }
+
+  .sidebar-header button {
+    background: #ffffff;
+  }
+
+  .sidebar-subheading button {
+    color: #F5F5F5;
+  }
+
+  .search-field input{
+    border-color: #bbbbbb;
+  }
+
+  .sidebar-header button {
+    box-shadow: none;
+  }
+
+  .docblock-argstable .docblock-argstable-body tr{
+    border: none;
+  }
+
+  .sidebar-header button {
+    background: #000 !important;
+    color: #fff !important;
+  }
+
+  .sidebar-header.css-axrk4p {
+    margin-top: 14px !important;
+    margin-bottom: 28px !important;
+  }
+
+  .search-result-item--label {
+    color: #FFFFFF;
+  }
+
+  a span {
+    color: #000000 !important;
+  }
+
+  .docblock-argstable .docblock-argstable-body input:checked ~ span:last-of-type,
+  .docblock-argstable .docblock-argstable-body input:not(:checked) ~ span:first-of-type {
+    color: rgb(255 255 255 / 95%);
+  }</style><style>#root[hidden],
+      #docs-root[hidden] {
+        display: none !important;
+      }</style></head><body><div id="root"></div><div id="docs-root"></div><script>window['CONFIG_TYPE'] = "PRODUCTION";
+          
+      
+          
+            window['LOGLEVEL'] = "info";
+          
+      
+          
+            window['FEATURES'] = {"postcss":true,"emotionAlias":true,"warnOnLegacyHierarchySeparator":true};
+          
+      
+          
+      
+          
+      
+          
+            window['DOCS_MODE'] = false;</script><script src="runtime~main.b031fa14b5d982bc25a4.manager.bundle.js"></script><script src="950.32ed7d7949c47e61c945.manager.bundle.js"></script><script src="main.2f4878c4598271199599.manager.bundle.js"></script></body></html>

@@ -1,0 +1,10 @@
+@import '../../utils/scss/helper.scss';
+
+p {
+  margin: 0;
+  font-family: var(--font-family-01);
+  color: var(--neutral-color-elements-03);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-default);
+  font-size: var(--font-size-xs);
+}

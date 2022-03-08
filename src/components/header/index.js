@@ -35,9 +35,9 @@ export default class DscHeader extends LitElement {
   }
 
   _handleDispatchEvent() {
-    this.dispatchEvent(new CustomEvent('dscChange', {
+    this.dispatchEvent(new CustomEvent('dscClick', {
       detail: {
-        checked: this.checked
+        opened: this.opened
       },
       bubbles: true,
       composed: true
@@ -59,6 +59,7 @@ export default class DscHeader extends LitElement {
           <dsc-icon
             .icon="${this.opened ? close : menu }"
             size="lg"
+            role="button"
             @click="${this._handleChange}"
           >
           </dsc-icon>

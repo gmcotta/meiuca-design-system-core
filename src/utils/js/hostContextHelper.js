@@ -5,7 +5,6 @@ export function hostContextHelper(el) {
 
   if(userAgent === 'firefox' || userAgent === 'safari') {
     const element = el.closest('[brand]');
-    console.log(element);
     const brand = element.getAttribute('brand');
     const theme = element.getAttribute('theme');
     const mode = element.getAttribute('mode');
@@ -27,7 +26,6 @@ export function hostContextHelper(el) {
         }
       })
     });
-    console.log({ observer });
     observer.observe(element, {
       attributes: true
     });

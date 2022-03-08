@@ -1,7 +1,7 @@
 import { LitElement, html, unsafeCSS } from "lit";
 import { classMap } from "lit/directives/class-map.js";
 
-import style from './styles.scss';
+import style from './select.styles.scss';
 
 export class DscSelect extends LitElement {
   static get styles() {

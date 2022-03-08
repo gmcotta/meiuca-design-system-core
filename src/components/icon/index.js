@@ -3,7 +3,7 @@ import { classMap } from 'lit/directives/class-map.js';
 
 import { createSvgElement } from "../../utils/js/svgHelper";
 
-import style from './styles.scss';
+import style from './icon.styles.scss';
 
 export default class DscIcon extends LitElement {
   static get styles() {

@@ -3,7 +3,7 @@ import { classMap } from 'lit/directives/class-map.js';
 
 import '../icon';
 import check from '@gmcotta/meiuca-assets/dist/assets/icons/check';
-import style from './styles.scss';
+import style from './checkbox.styles.scss';
 
 export default class DscCheckbox extends LitElement {
   static get styles() {

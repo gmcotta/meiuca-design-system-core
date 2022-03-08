@@ -1,5 +1,5 @@
 import { html, LitElement, unsafeCSS } from "lit";
-import style from './styles.scss';
+import style from './paragraph.styles.scss';
 
 export class DscParagraph extends LitElement {
   static get styles() {

@@ -1,5 +1,5 @@
 import { html, LitElement, unsafeCSS } from "lit";
-import style from './styles.scss';
+import style from './heading.styles.scss';
 
 export const HEADING_SIZE_OPTIONS = ['xs', 'sm', 'md', 'lg', 'xl', 'display'];
 

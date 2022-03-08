@@ -7,7 +7,7 @@ import Brand from "./Brand";
 import menu from '@gmcotta/meiuca-assets/dist/assets/icons/menu';
 import close from '@gmcotta/meiuca-assets/dist/assets/icons/close';
 import '../icon';
-import style from './styles.scss';
+import style from './header.styles.scss';
 
 export default class DscHeader extends LitElement {
   static get styles() {

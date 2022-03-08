@@ -2,7 +2,7 @@ import { html, LitElement, unsafeCSS } from "lit";
 import { classMap } from 'lit/directives/class-map.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
 
-import style from './styles.scss';
+import style from './button.styles.scss';
 
 export class DscButton extends LitElement {
   static get styles() {

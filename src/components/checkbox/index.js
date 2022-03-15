@@ -23,8 +23,8 @@ export default class DscCheckbox extends LitElement {
 
   constructor() {
     super();
-    this.id = '';
-    this.name = '';
+    this.id = 'dsc-checkbox';
+    this.name = 'dsc-checkbox';
     this.label = '';
     this.checked = false;
     this.required = false;

@@ -24,8 +24,8 @@ export class DscSelect extends LitElement {
   
   constructor() {
     super();
-    this.id = '';
-    this.name = '';
+    this.id = 'dsc-select';
+    this.name = 'dsc-select';
     this.value = '';
     this.label = '';
     this.helperText = '';

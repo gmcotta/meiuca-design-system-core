@@ -103,7 +103,7 @@ export class DscSelect extends LitElement {
           .value="${this.value}"
           ?required="${this.required}"
           ?disabled="${this.disabled}"
-          @input="${event => this._handleChange(event)}"
+          @change="${event => this._handleChange(event)}"
           @focus="${this._handleFocus}"
           @blur="${this._handleBlur}"
         >

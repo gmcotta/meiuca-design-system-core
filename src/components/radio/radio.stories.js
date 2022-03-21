@@ -13,11 +13,9 @@ export const Radio = ({
   checked,
   disabled
 }) => {
-
-
   function _handleChange(e) {
     action('dscChange')({ value: e.detail.value });
-}
+  }
 
   return html`
     <dsc-radio-group
@@ -67,8 +65,8 @@ Radio.argTypes = {
 
 Radio.parameters = {
   docs: {
-      source: {
-          code: `<dsc-radio label="Label" checked="false"></dsc-radio>`
-      }
+    source: {
+      code: `<dsc-radio label="Label" checked="false"></dsc-radio>`
+    }
   }
 }

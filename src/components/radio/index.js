@@ -2,7 +2,7 @@ import { LitElement, html, unsafeCSS } from 'lit';
 import { classMap } from 'lit/directives/class-map.js';
 
 import bullet from '@gmcotta/meiuca-assets/dist/assets/icons/bullet';
-import '../icon'
+import '../icon';
 
 import style from './radio.styles.scss';
 
@@ -43,10 +43,10 @@ export default class DscRadio extends LitElement {
 
   updated(changedProperties) {
     changedProperties.forEach((oldValue, propName) => {
-        if (propName === 'checked' && oldValue !== undefined) {
-          console.log(this.checked);
-          this.hiddenInput.checked = this.checked;
-        }
+      if (propName === 'checked' && oldValue !== undefined) {
+        console.log(this.checked);
+        this.hiddenInput.checked = this.checked;
+      }
     });
   }
 
@@ -58,9 +58,9 @@ export default class DscRadio extends LitElement {
   _handleDispatchEvent = () => {
     this.dispatchEvent(new CustomEvent('dscChange', {
       detail: {
-          checked: this.checked,
-          index: this.index,
-          value: this.value
+        checked: this.checked,
+        index: this.index,
+        value: this.value
       },
       bubbles: true,
       composed: true
@@ -100,6 +100,6 @@ export default class DscRadio extends LitElement {
   }
 }
 
-if (!customElements.get('dsc-radio')) {
-  customElements.define('dscr-radio', DscRadio);
+if (!customElements.get('dsc-radio')) { 
+  customElements.define('dsc-radio', DscRadio);
 }

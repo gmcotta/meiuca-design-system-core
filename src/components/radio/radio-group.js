@@ -79,7 +79,6 @@ export class DscRadioGroup extends LitElement {
   }
 }
 
-
 if (!customElements.get('dsc-radio-group')) { 
   customElements.define('dsc-radio-group', DscRadioGroup); 
 }

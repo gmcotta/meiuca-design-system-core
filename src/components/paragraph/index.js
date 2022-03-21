@@ -12,7 +12,7 @@ export class DscParagraph extends LitElement {
 
   render() {
     return html`
-      <p>
+      <p part="typography">
         <slot></slot>
       </p>
     `;

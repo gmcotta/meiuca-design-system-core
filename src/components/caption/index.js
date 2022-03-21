@@ -12,7 +12,7 @@ export class DscCaption extends LitElement {
 
   render() {
     return html`
-      <span>
+      <span part="typography">
         <slot></slot>
       </span>
     `;

@@ -37,7 +37,7 @@ export class DscHeading extends LitElement {
   render() {
     return html`
       ${unsafeHTML(`
-        <${this.level} class="heading heading--${this.size}">
+        <${this.level} class="heading heading--${this.size}" part="typography">
           <slot></slot>
         </${this.level}>`
       )}

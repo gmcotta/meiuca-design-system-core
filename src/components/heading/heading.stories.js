@@ -1,14 +1,14 @@
 import {html} from 'lit';
 import '.';
-import { HEADING_SIZE_OPTIONS } from '.';
+import { HEADING_LEVELS, HEADING_SIZE_OPTIONS } from '.';
 
 export default {
   title: 'Components/Typography/Heading'
 }
 
-export const Heading = ({ size, content }) => {
+export const Heading = ({ size, level, content }) => {
   return html`
-    <dsc-heading .size="${size}">
+    <dsc-heading .size="${size}" .level="${level}">
       ${content}
     </dsc-heading>
   `;
@@ -16,7 +16,8 @@ export const Heading = ({ size, content }) => {
 
 Heading.args = {
   content: 'Heading',
-  size: 'display'
+  size: 'display',
+  level: 'h1'
 }
 
 Heading.argTypes = {
@@ -30,6 +31,17 @@ Heading.argTypes = {
     },
     control: 'select',
     options: HEADING_SIZE_OPTIONS
+  },
+  level: {
+    name: 'Level',
+    description: 'Indica a hierarquia do heading a ser exibido',
+    table: {
+      category: 'Modifiers',
+      type: { summary: 'string' },
+      defaultValue: { summary: 'h1' }
+    },
+    control: 'select',
+    options: HEADING_LEVELS
   },
   content: {
     name: 'Content',
@@ -45,7 +57,7 @@ Heading.argTypes = {
 Heading.parameters = {
   docs: {
     source: {
-      code: `<dsc-heading size="display>[content]</dsc-heading>`
+      code: `<dsc-heading size="display" level="h1">[content]</dsc-heading>`
     }
   }
 }

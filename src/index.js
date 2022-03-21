@@ -1,4 +1,16 @@
 import './components/button';
+import './components/caption';
+import './components/card';
+import './components/checkbox';
 import './components/header';
+import './components/heading';
 import './components/icon';
+import './components/input';
+import './components/link';
+import './components/paragraph';
+import './components/radio';
 import './components/select';
+import './components/switch';
+import './components/tag';
+import './components/textarea';
+import './components/tooltip';

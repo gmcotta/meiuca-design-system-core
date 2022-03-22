@@ -9,6 +9,7 @@ import './components/input';
 import './components/link';
 import './components/paragraph';
 import './components/radio';
+import './components/radio/radio-group';
 import './components/select';
 import './components/switch';
 import './components/tag';

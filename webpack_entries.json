@@ -35,6 +35,9 @@
   "radio": {
     "import": "./src/components/radio/index.js"
   },
+  "radio-group": {
+    "import": "./src/components/radio/radio-group.js"
+  },
   "select": {
     "import": "./src/components/select/index.js"
   },

@@ -3,7 +3,8 @@
 .input-text{
   display: flex;
   flex-direction: column;
-  min-width: 320px;
+  width: 100%;
+
   label {
     color: var(--neutral-color-elements-03);
     font-size: var(--font-size-xxs);
@@ -12,6 +13,7 @@
     line-height: var(--line-height-default);
     padding-bottom: var(--spacing-size-quarck);
   }
+
   input{
     background-color: transparent;
     border: var(--border-width-thin) solid var(--neutral-color-elements-03);
@@ -33,7 +35,6 @@
       outline-color: var(--highlight-color-pure);
       outline-offset: var(--border-width-thin);
     }
-
   }
 
   &:hover{

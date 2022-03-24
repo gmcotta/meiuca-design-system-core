@@ -1212,15 +1212,15 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
-"@gmcotta/design-tokens@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@gmcotta/design-tokens/-/design-tokens-1.0.2.tgz#c74209efa0dabe7c031aa93d61fb989ce456c6fe"
-  integrity sha512-CE2dUdxyYMEqyeYoB0Y1XEHBOjQkMt5XzyvOsZgiOXTl3nnt2zTgN1qIMyYhBWHTLwV1kkiB2Enj6pECMefbQw==
+"@gmcotta/design-tokens@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@gmcotta/design-tokens/-/design-tokens-1.0.3.tgz#5646e0e64718c888489b8f6b24a64117feea86eb"
+  integrity sha512-xoh7430Sb3lcK4sPnCcqiM/gbheFmUK4PG0iND/DowQ88zKGzG5191/ESMA5BpYDb97wNNZIEPMNjnSVLSfu/w==
 
-"@gmcotta/meiuca-assets@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@gmcotta/meiuca-assets/-/meiuca-assets-1.0.0.tgz#1850651533f4bd456114b5e0d48302b7a134e089"
-  integrity sha512-2OcQ+sWgUgq6VZ08T0Ks5Te7QEE+QMyPACsYR1od76TCyEHBZKsu3SjutezFTmrhQhcWyA6vXZJc0VLWHDskUg==
+"@gmcotta/meiuca-assets@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@gmcotta/meiuca-assets/-/meiuca-assets-1.0.1.tgz#4a31a446052cddfa1b81410e248487d159aaa862"
+  integrity sha512-wE2Xg5mFsSgtSqZmJJoUawbyB1LNb1nUYXdGziCyQ7bBsVKdjZtIopF0SZA+fCANzaKHHPLO/0r0Zp0IoxXQeg==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"

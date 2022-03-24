@@ -1,6 +1,6 @@
 {
   "name": "@gmcotta/design-system-core",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Repositório da biblioteca de componentes core do curso de Design Systems para desenvolvedores da Meiuca",
   "main": "index.js",
   "repository": {
@@ -55,8 +55,8 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@gmcotta/design-tokens": "^1.0.2",
-    "@gmcotta/meiuca-assets": "^1.0.0",
+    "@gmcotta/design-tokens": "^1.0.3",
+    "@gmcotta/meiuca-assets": "^1.0.1",
     "lit": "^2.2.0"
   }
 }

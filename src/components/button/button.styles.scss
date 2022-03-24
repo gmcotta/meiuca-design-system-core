@@ -39,6 +39,7 @@
       position: absolute;
       top: calc(50% - 1px);
       animation: loading 1s linear infinite;
+      background: var(--contrast-color-brand);
     }
   }
 
@@ -52,8 +53,8 @@
     &:disabled {
       // Button/State/Disable
       cursor: initial;
-      color: var(--neutral-elements-01);
-      background-color: var(--neutral-surface-02);
+      color: var(--neutral-color-elements-01);
+      background-color: var(--neutral-color-surface-02);
     }
   }
 }
